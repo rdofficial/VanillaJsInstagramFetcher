@@ -1,0 +1,117 @@
+/*
+CSS file for Instagram Fetcher (VanillaJS)
+
+Note :-
+1. The default CSS properties are set with respect to mobile devices and, so for deskop view of the web page, we have to change the CSS properties of elements. For that purpose, we will use the 'media' keyword.
+
+Author : Rishav Das
+*/
+
+/* Setting the CSS properties for the body HTML element */
+body {
+	font-family: Arial;
+	background-size: 100%;
+	background-image: url(images/body-background.jpg);
+	color: #fff;
+}
+
+/* Setting the CSS properties of the header HTML element */
+.header {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-bottom: 5px;
+	padding: 10px;
+	min-height: 50px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Setting the CSS properties of the container HTML element */
+.container {
+	width: 90%;
+	margin: 5px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Setting the CSS properties for the profile-picture image */
+img.profile-picture {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+/* Setting the CSS properties for the 'b' tag */
+b {
+	color: #e74c3c;
+}
+
+/* Setting the CSS properties for the btn */
+.btn {
+	padding: 7.5px 10px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	color: #000;
+	background-color: #fff;
+}
+.btn:hover {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
+	transition-duration: .5s;
+}
+
+/* Setting the CSS properties for the text input boxes */
+input[type="text"] {
+	width: 50%;
+	font-size: 15px;
+	padding: 7.5px 10px;
+}
+
+/* Setting the CSS properties for the elements in the post-card elements */
+.post-card {
+	width: 90%;
+	padding: 10px;
+	margin: 7.5px 5px;
+	background-color: #34495e;
+	border-radius: 5px;
+	border: 2px solid #2c3e50;
+}
+.post-card .post-thumbnail {
+	height: 80%;
+	width: 80%;
+	align-self: left;
+}
+.post-card .post-info {
+	word-wrap: all;
+}
+
+@media only screen and (min-width: 850px) {
+	/* The change in some CSS properties of certain elements with respect to the desktop view */
+
+	/* Changing the CSS properties of the header element w.r.t desktop view */
+	.header {
+		font-size: 30px;
+	}
+
+	/* Changing the CSS properties for the container HTML element with respect to dektop view */
+	.container {
+		width: 80%;
+		margin: 5px 10%;
+	}
+
+	/* Changing the properties of the elements inside the informationContainer*/
+	.post-card .post-thumbnail {
+		height: 25%;
+		width: 25%;
+		align-self: left;
+	}
+	.post-card .post-info {
+		word-wrap: all;
+	}
+}
